@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/chaithu73/krishnabank.git'
+                git credentialsId: 'chaithu73', url: 'https://github.com/chaithu73/krishnabank.git'
             }
         }
 
